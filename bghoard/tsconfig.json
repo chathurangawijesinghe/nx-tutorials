@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bghoard/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@bghoard/ui-tile": ["libs/ui-tile/src/index.ts"],
+      "@bghoard/review/ui-tile": ["libs/review/ui-tile/src/index.ts"],
+      "@bghoard/review/data-access-games": [
+        "libs/review/data-access-games/src/index.ts"
+      ],
+      "@bghoard/review/util-formatters": [
+        "libs/review/util-formatters/src/index.ts"
+      ],
+      "@bghoard/review/feature-list": ["libs/review/feature-list/src/index.ts"],
+      "@bghoard/review/feature-details": [
+        "libs/review/feature-details/src/index.ts"
+      ],
+      "@bghoard/shared/ui-tile": ["libs/shared/ui-tile/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
